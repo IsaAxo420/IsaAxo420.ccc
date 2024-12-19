@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>指尖幻影免广告版</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-image: url('https://images.unsplash.com/photo-1516116216620-8a8c00a98f56?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGFkdmVudHVyZXxlbnwwfHx8fDE2MjAwNTg1NTE&ixlib=rb-1.2.1&q=80&w=1080'); /* 示例背景图 */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+            text-align: center;
+        }
+        .container {
+            background-color: rgba(0, 0, 0, 0.8); /* 更深的透明黑色背景 */
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 28px;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+        }
+        input[type="text"] {
+            width: 250px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ffcc00;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #ffc107;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>指尖幻影免广告版</h1>
+    <input type="text" placeholder="请输入卡密" id="card-input" />
+    <button onclick="submitCard()">提交</button>
+</div>
+
+<script>
+    function submitCard() {
+        const cardInput = document.getElementById('card-input').value;
+        if (cardInput) {
+            alert('您输入的卡密是: ' + cardInput);
+            // 这里可以添加处理卡密的逻辑
+        } else {
+            alert('请输入卡密！');
+        }
+    }
+</script>
+
+</body>
+</html>
